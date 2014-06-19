@@ -1,0 +1,43 @@
+
+#define GSMPLUS_NBR_CMD_IOANA		28
+
+#define GSMPLUS_IOANA_COEF			0
+#define GSMPLUS_IOANA_OFFSET		1
+#define GSMPLUS_IOANA_FMIN			2
+#define GSMPLUS_IOANA_FMAX			3
+#define GSMPLUS_IOANA_TIF			4
+#define GSMPLUS_IOANA_TF			5
+#define GSMPLUS_IOANA_SE			6
+#define GSMPLUS_IOANA_CNSG			7
+#define GSMPLUS_IOANA_TH			8
+#define GSMPLUS_IOANA_TB			9
+#define GSMPLUS_IOANA_HYS			10
+#define GSMPLUS_IOANA_TFA			11
+#define GSMPLUS_IOANA_MA			12
+#define GSMPLUS_IOANA_TMH			13
+#define GSMPLUS_IOANA_NMH			14
+#define GSMPLUS_IOANA_VA			15
+#define GSMPLUS_IOANA_BS			16
+#define GSMPLUS_IOANA_BO			17
+#define GSMPLUS_IOANA_AK			18
+#define GSMPLUS_IOANA_AA			19
+#define GSMPLUS_IOANA_NOM			20
+#define GSMPLUS_IOANA_MSGA			21
+#define GSMPLUS_IOANA_TAVA			22
+#define GSMPLUS_IOANA_TAVD			23
+#define GSMPLUS_IOANA_P				24
+#define GSMPLUS_IOANA_TON			25
+#define GSMPLUS_IOANA_MODE			26	
+#define GSMPLUS_IOANA_TRA			27	
+
+
+#define GSMPLUS_ALARME_PERIPHE_ETAT				0
+#define GSMPLUS_ALARME_PERIPHE_TO_TEL1			1
+#define GSMPLUS_ALARME_PERIPHE_TO_TEL2			2
+#define GSMPLUS_ALARME_PERIPHE_TO_TEL3			3
+#define GSMPLUS_ALARME_PERIPHE_TO_TEL4			4
+
+
+void gsmplus_Init(void);
+int gsmplus_Gestion(void);
+char gsmplus_Requete(char *pCommande, char *pParametre, char *pChaineTemps);
